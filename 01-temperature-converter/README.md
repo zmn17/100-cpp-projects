@@ -31,6 +31,6 @@ g++ main.cpp -o temperature-converter
 ```
 
 ## 🖼️ Screenshot
-![Menu demo](temperature-converter/menu.png)
-![Conversion demo](temperature-converter/demo.png)
+![Menu demo](./menu.png)
+![Conversion demo](./demo.png)
 
