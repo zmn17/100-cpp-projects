@@ -5,22 +5,21 @@ CURR_DIR="$(pwd)"
 
 # --- SPINNER FUNCTION ---
 # This function displays a spinner while a background process (PID) is running.
-show_spinner(){
+show_spinner() {
   local pid="${1}"
   local delay="0.1"
   local spinstr='\|/-'
   local i=0
 
   # loop while the process exits
-  while ps -p "${pid}" > /dev/null; do
-    i=$(( (i+1) % 4))
+  while ps -p "${pid}" >/dev/null; do
+    i=$(((i + 1) % 4))
     # use $i for indexing spinstr
-    printf "\r[%c] Initializing project..." "${spinstr:%i:1}"
+    printf "\r[%c] Initializing project..." "${spinstr:$i:1}"
     sleep "${delay}"
   done
   printf "\r                  \r" # Clear the spinner line}
 }
-
 
 # --- Project initialization ---
 
@@ -48,7 +47,7 @@ fi
 mkdir -p "$PROJECT_PATH"
 
 # create the main.cpp file + boilerplate
-cat <<EOCPP > "${PROJECT_PATH}/main.cpp"
+cat <<EOCPP >"${PROJECT_PATH}/main.cpp"
 #include <iostream>
 
 int main(){
@@ -60,7 +59,7 @@ EOCPP
 # create read me file
 README_FILE="${PROJECT_PATH}/README.md"
 
-cat <<EOF > "$README_FILE"
+cat <<EOF >"$README_FILE"
 # 🗓️ Day X: ${PROJECT_NAME}
 
 ## 🎯 Goal
