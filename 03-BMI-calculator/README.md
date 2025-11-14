@@ -1,4 +1,4 @@
-# 🗓️ Day X: BMI calculator
+# 🗓️ Day 2: 03-BMI-calculator
 
 ## 🎯 Description
 Calculate your BMI in metric units.
