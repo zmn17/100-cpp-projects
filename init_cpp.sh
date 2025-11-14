@@ -62,7 +62,7 @@ README_FILE="${PROJECT_PATH}/README.md"
 cat <<EOF >"$README_FILE"
 # 🗓️ Day X: ${PROJECT_NAME}
 
-## 🎯 Goal
+## 🎯 Description
 *(Briefly describe the main purpose of this project.)*
 
 ## 🛠️ Tech Stack

@@ -1,6 +1,6 @@
 # 🗓️ Day 1: temperature-converter
 
-## 🎯 Goal
+## 🎯 Description
 This is a simple yet feature-rich command-line application written in C++ that converts temperatures between Celsius and Fahrenheit. It utilizes C++ streams and manipulators, along with ANSI escape codes, to provide a clear and colorful output for easy reading.
 
 ## ✨ Features
